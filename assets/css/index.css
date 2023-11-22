@@ -1,4 +1,15 @@
 /* Light Mode Styles (default) */
+#loadingBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #4caf50; /* Change to your preferred color */
+    z-index: 1000; /* Ensures it's above other elements */
+    transition: width 0.5s ease-out;
+}
+
 body {
   background-color: #fff; /* Light background */
   /* Other body styles remain as they are */
