@@ -1,16 +1,10 @@
-/* Light Mode Styles (default) */
 body {
-  background-color: #fff; /* Light background */
-  color: #000; /* Dark text */
+  background-color: #000;
 }
 
-a, #a, #c, #b, #k, #op {
-  color: #007bff; /* Light mode link color */
-}
-
-/* Existing styles that don't need to change can remain as they are */
 #console {
   font-family: courier, monospace;
+  color: #fff;
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -18,23 +12,31 @@ a, #a, #c, #b, #k, #op {
   font-size: 14px;
 }
 
-/* Other existing styles... */
-
-/* Dark Mode Styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000; /* Dark background */
-    color: #fff; /* Light text */
-  }
-
-  a, #a, #c, #b, #k, #op {
-    color: #0bc; /* Dark mode link color */
-  }
-
-  /* Add other dark mode specific styles here, if needed */
+a {
+  color: #0bc;
+  text-decoration: none;
 }
 
-/* Existing keyframes and other animations */
+#a {
+  color: #0f0;
+}
+
+#c {
+  color: #0bc;
+}
+
+#b {
+  color: #ff0096;
+}
+
+#k {
+  animation: change 1s;
+}
+
+#op {
+  color: #888888;
+}
+
 @keyframes change {
   0% {
     color: #0f0;
@@ -46,5 +48,3 @@ a, #a, #c, #b, #k, #op {
     color: black;
   }
 }
-
-/* Other existing styles... */
