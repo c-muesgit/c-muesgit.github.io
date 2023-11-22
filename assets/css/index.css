@@ -1,10 +1,12 @@
+/* Light Mode Styles (default) */
 body {
-  background-color: #000;
+  background-color: #fff; /* Light background */
+  /* Other body styles remain as they are */
 }
 
 #console {
   font-family: courier, monospace;
-  color: #fff;
+  color: #ccc; /* Slightly darker text color for light mode */
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -13,20 +15,20 @@ body {
 }
 
 a {
-  color: #0bc;
+  color: #006699; /* Darker blue for light mode */
   text-decoration: none;
 }
 
 #a {
-  color: #0f0;
+  color: #009900; /* Darker green for light mode */
 }
 
 #c {
-  color: #0bc;
+  color: #006699; /* Darker cyan for light mode */
 }
 
 #b {
-  color: #ff0096;
+  color: #cc0099; /* Darker pink for light mode */
 }
 
 #k {
@@ -34,17 +36,63 @@ a {
 }
 
 #op {
-  color: #888888;
+  color: #555555; /* Darker grey for light mode */
 }
 
 @keyframes change {
   0% {
-    color: #0f0;
+    color: #009900; /* Darker green for light mode */
   }
   50% {
-    color: #0f0;
+    color: #009900; /* Darker green for light mode */
   }
   99% {
-    color: black;
+    color: #333333; /* Darker color for light mode */
   }
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000; /* Dark background */
+    /* No changes to text color */
+  }
+
+  #console {
+    color: #fff; /* Original light text color for dark mode */
+  }
+
+  a {
+    color: #0bc; /* Original light blue for dark mode */
+  }
+
+  #a {
+    color: #0f0; /* Original light green for dark mode */
+  }
+
+  #c {
+    color: #0bc; /* Original light cyan for dark mode */
+  }
+
+  #b {
+    color: #ff0096; /* Original light pink for dark mode */
+  }
+
+  #op {
+    color: #888888; /* Original grey for dark mode */
+  }
+
+  @keyframes change {
+    0% {
+      color: #0f0; /* Original light green for dark mode */
+    }
+    50% {
+      color: #0f0; /* Original light green for dark mode */
+    }
+    99% {
+      color: black; /* Original color for dark mode */
+    }
+  }
+
+  /* No changes to other element styles */
 }
