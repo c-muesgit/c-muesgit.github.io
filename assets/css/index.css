@@ -6,7 +6,7 @@ body {
 
 #console {
   font-family: courier, monospace;
-  color: #ccc; /* Slightly darker text color for light mode */
+  color: #000; /* Dark text for light mode */
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
