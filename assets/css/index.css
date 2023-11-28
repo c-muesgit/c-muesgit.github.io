@@ -17,7 +17,7 @@ body {
 
 #console {
   font-family: courier, monospace;
-  color: #000; /* Dark text for light mode */
+  color: #ff0096; /* Dark text for light mode */
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
@@ -70,7 +70,7 @@ a {
   }
 
   #console {
-    color: #fff; /* Original light text color for dark mode */
+    color: #ff0096; /* Original light text color for dark mode */
   }
 
   a {
