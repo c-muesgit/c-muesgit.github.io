@@ -107,38 +107,3 @@ function t() {
     clearInterval(timer);
   }
 }
-
-  // Progress bar function
-  showProgressBar: function(callback) {
-    var progressBar = "";
-    var totalTicks = 10;
-    var interval = 200; // 2 seconds in total
-
-    var updateProgress = function(tick) {
-      progressBar += "="; // Add a tick to the progress bar
-      $("#console").html("Loading [" + progressBar + "]");
-
-      if (tick < totalTicks) {
-        setTimeout(function() { updateProgress(tick + 1); }, interval);
-      } else {
-        $("#console").html("Done!");
-        if (callback) {
-          callback(); // Call the callback function after the progress bar is complete
-        }
-      }
-    };
-
-    updateProgress(0); // Start the progress bar
-  },
-
-  // Modify the init function to include the progress bar
-  init: function () {
-    // Existing initialization code...
-
-    // Call the progress bar function
-    this.showProgressBar();
-  }
-};
-
-// Initialize Typer
-Typer.init();
